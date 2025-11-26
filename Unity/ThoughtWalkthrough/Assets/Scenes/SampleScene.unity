@@ -547,7 +547,7 @@ MonoBehaviour:
   brushSize: 15
   brushColor: {r: 1, g: 1, b: 1, a: 1}
   pythonScriptName: C:\Users\cgall\Documents\GitHub\ThoughtWalkthrough\run_inference.py
-  modelFileName: ../mnist_model.pth
+  modelFileName: C:\Users\cgall\Documents\GitHub\ThoughtWalkthrough\mnist_model.pth
   pythonExecutablePath: C:\Users\cgall\Documents\GitHub\ThoughtWalkthrough\.venv\Scripts\python.exe
 --- !u!4 &801456296
 Transform:
@@ -968,8 +968,8 @@ MonoBehaviour:
   childOrbSpeed: 30
   activationThreshold: 0.5
   minOrbSize: 0.1
-  maxOrbSize: 1
-  layerDelayTime: 1
+  maxOrbSize: 0.8
+  layerDelayTime: 0.5
   followMainOrb: 1
   cameraOffset: {x: 0, y: 0, z: -50}
   cameraSmoothSpeed: 5
