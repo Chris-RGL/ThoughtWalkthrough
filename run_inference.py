@@ -70,6 +70,12 @@ def run_inference(image_path, model_path='mnist_model.pth'):
     """Run inference on user drawing"""
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
+    # Convert to absolute path if relative
+    if not os.path.isabs(model_path):
+        # Try relative to script location first
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        model_path = os.path.join(script_dir, model_path)
+    
     # Load model
     model = MNISTNet().to(device)
     

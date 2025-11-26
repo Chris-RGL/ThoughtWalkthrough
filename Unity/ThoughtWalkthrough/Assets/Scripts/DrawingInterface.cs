@@ -19,13 +19,13 @@ public class DrawingInterface : MonoBehaviour
 
     [Header("Python Configuration")]
     [Tooltip("The name of your python script inside the Assets folder")]
-    public string pythonScriptName = "mnist_inference.py";
+    public string pythonScriptName = @"";
 
     [Tooltip("The name of your model file inside the Assets folder")]
-    public string modelFileName = "mnist_model.pth";
+    public string modelFileName = @"";
 
     [Tooltip("Absolute path to your Python executable")]
-    public string pythonExecutablePath = @"C:\Users\cgall\Documents\GitHub\ThoughtWalkthrough\.venv\Scripts\python.exe";
+    public string pythonExecutablePath = @"";
 
     private Texture2D drawingTexture;
     private bool isDrawing = false;
@@ -256,6 +256,8 @@ public class DrawingInterface : MonoBehaviour
         string error = process.StandardError.ReadToEnd();
 
         process.WaitForExit();
+
+        Debug.Log($"Testing Arguments: {arguments}");
 
         Debug.Log($"Python output: {output}");
         if (!string.IsNullOrEmpty(error))

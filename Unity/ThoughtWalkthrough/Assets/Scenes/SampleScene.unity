@@ -542,11 +542,13 @@ MonoBehaviour:
   clearButton: {fileID: 1485486335}
   submitButton: {fileID: 437435972}
   instructionText: {fileID: 1713192357}
-  canvasPanel: {fileID: 0}
+  canvasPanel: {fileID: 65656933}
   canvasSize: 280
   brushSize: 15
   brushColor: {r: 1, g: 1, b: 1, a: 1}
-  pythonScriptPath: C:/Users/cgall/Documents/GitHub/ThoughtWalkthrough/run_inference.py
+  pythonScriptName: C:\Users\cgall\Documents\GitHub\ThoughtWalkthrough\run_inference.py
+  modelFileName: ../mnist_model.pth
+  pythonExecutablePath: C:\Users\cgall\Documents\GitHub\ThoughtWalkthrough\.venv\Scripts\python.exe
 --- !u!4 &801456296
 Transform:
   m_ObjectHideFlags: 0
